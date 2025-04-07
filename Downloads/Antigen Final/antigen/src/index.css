@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F6F6; /* Light mode background */
+  color: #2E4053; /* Light mode text */
+  font-size: 1.2rem; /* Increased text size for readability */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions for dark mode */
+}
+
+.dark {
+  background-color: #282828; /* Dark mode background */
+  color: #D5DBDB; /* Dark mode text */
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #1C2833; /* Navy Blue */
+  color: #FFD700; /* Soft Gold text */
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFD700; /* Accent color */
+  margin: 0 10px;
+  padding: 10px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 1.2rem; /* Increased text size for links */
+}
+
+nav a:hover {
+  background-color: #F4F6F6; /* Light hover background */
+  color: #1C2833; /* Primary color for hover */
+}
+
+.dark nav {
+  background-color: #121212; /* Midnight Blue in dark mode */
+  color: #007BFF; /* Electric Blue */
+}
+
+.dark nav a {
+  color: #007BFF; /* Electric Blue for links in dark mode */
+}
+
+.dark nav a:hover {
+  background-color: #282828; /* Dark hover background */
+  color: #D5DBDB; /* Light text color for hover */
+}
+
+/* Positive Quote */
+.quote {
+  font-size: 2.5rem; /* Larger font size for emphasis */
+  font-weight: bold; /* Bold text for prominence */
+  text-align: center;
+  color: #FFD700; /* Soft Gold for the quote */
+  background-color: #1C2833; /* Navy Blue for background */
+  padding: 2rem; /* Add spacing around the quote */
+  margin: 3rem auto; /* Center horizontally with vertical spacing */
+  max-width: 50%; /* Take up half the screen */
+  border-radius: 12px; /* Rounded corners for elegance */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+}
+
+.dark .quote {
+  color: #007BFF; /* Electric Blue for the quote in dark mode */
+  background-color: #121212; /* Midnight Blue for the background */
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.3rem; /* Larger font size for accessibility */
+  font-weight: bold; /* Bold text for visibility */
+  padding: 1rem; /* Increased padding */
+  border-radius: 8px; /* Rounded corners for modern look */
+  border: 1px solid #FFD700; /* Soft Gold border */
+  margin-bottom: 1.5rem; /* Add spacing below inputs */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+input:focus {
+  border-color: #1C2833; /* Navy Blue focus color */
+  outline: none;
+  box-shadow: 0px 0px 6px rgba(28, 40, 51, 0.5); /* Subtle glow effect */
+}
+
+.dark input {
+  background-color: #282828; /* Deep Gray background */
+  color: #D5DBDB; /* Light Gray text */
+  border-color: #007BFF; /* Electric Blue border in dark mode */
+}
+
+input::placeholder {
+  color: #777; /* Placeholder text in light mode */
+}
+
+.dark input::placeholder {
+  color: #999; /* Placeholder text in dark mode */
+}
+
+/* Buttons */
+button {
+  font-size: 1.4rem; /* Larger font size for buttons */
+  font-weight: bold; /* Bold text */
+  padding: 14px 28px; /* Bigger buttons */
+  background-color: #1C2833; /* Navy Blue background */
+  color: #FFD700; /* Soft Gold text */
+  border: none; /* Clean design */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth effects */
+}
+
+button:hover {
+  background-color: #FFD700; /* Gold hover background */
+  color: #1C2833; /* Navy Blue text on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:active {
+  background-color: #F4F6F6; /* Light gray on click */
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.3); /* Pressed effect */
+}
+
+.dark button {
+  background-color: #121212; /* Midnight Blue for dark mode */
+  color: #007BFF; /* Electric Blue for text */
+}
+
+.dark button:hover {
+  background-color: #007BFF; /* Electric Blue hover background */
+  color: #121212; /* Midnight Blue text on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #1C2833; /* Navy Blue for footer */
+  color: #FFD700; /* Soft Gold text */
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 1rem; /* Increased font size */
+}
+
+.dark footer {
+  background-color: #121212; /* Midnight Blue in dark mode */
+  color: #007BFF; /* Electric Blue text in dark mode */
+}
